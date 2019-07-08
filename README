@@ -1,0 +1,22 @@
+### WARNING
+
+This software was developed as a proof of concept as well as the collection of performance data. This software is not secure and should not be deployed in any context. 
+
+
+### Requires
+    * Number Theory Library (NTL)
+      -https://www.shoup.net/ntl/
+      -Version 11.3.2
+    * GNU Multiple Precision Arithmetic Library (GMP)
+      - https://gmplib.org/
+      - Version 6.1.2
+      - Built with:
+        # ./configure --enable-cxx; make
+    * RELIC
+      - https://github.com/relic-toolkit/relic/
+      - Commit e56004: https://github.com/relic-toolkit/relic/tree/e656004f67c3090465f641b19466442664f54d74 
+      - Built with:
+        # cmake -DARITH=gmp [path to relic]; make
+
+### Build instructions
+    #make
